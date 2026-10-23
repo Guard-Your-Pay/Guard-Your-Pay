@@ -117,10 +117,10 @@
 
 <main>
 
-  <p class="updated">Last updated: June 2026</p>
+  <p class="updated">Last updated: October 2026</p>
 
   <div class="highlight">
-    <strong>The short version:</strong> Guard Your Pay does not collect, transmit, or store any of your personal or financial data. Everything stays on your device.
+    <strong>The short version:</strong> Guard Your Pay has no servers and no accounts, so we never receive any of your personal or financial data. Everything you enter stays on your device. The only exception: to work out your home-to-duty distance, the app sends your home and duty station postcodes to two free public mapping services.
   </div>
 
   <section>
@@ -130,8 +130,8 @@
 
   <section>
     <h2>What data we collect</h2>
-    <p>We do not collect any personal data. Guard Your Pay does not require you to create an account, and nothing you enter into the app is sent to us or any third party.</p>
-    <p>The information you enter — your rank, pay, accommodation type, posting location, and spending — is stored locally on your device only, using your phone's built-in secure storage. It never leaves your device.</p>
+    <p>We do not collect any personal data. Guard Your Pay does not require you to create an account, and nothing you enter into the app is ever sent to us. The only information that leaves your device is the two postcodes described under <strong>Distance calculations</strong> below.</p>
+    <p>The information you enter — your rank, pay, accommodation type, posting location, and spending — is stored locally on your device only, in the app's own private storage, which other apps cannot access. Deleting the app deletes this data.</p>
   </section>
 
   <section>
@@ -145,15 +145,20 @@
   </section>
 
   <section>
-    <h2>Future features</h2>
-    <p>A future version of the app may include the option to upload a photo of your JPA payslip to automatically extract pay figures. If and when this feature is introduced:</p>
+    <h2>Distance calculations</h2>
+    <p>Home to Duty (HTD) and Get You Home (Travel) entitlements depend on the road distance between your home and your duty station. To calculate it, the app sends your <strong>home postcode</strong> and your <strong>duty station postcode</strong> to two free, independent public services:</p>
     <ul>
-      <li>It will be clearly explained in the app before use</li>
-      <li>It will be optional — not required to use the app</li>
-      <li>This privacy policy will be updated to reflect how that data is handled</li>
-      <li>Any image processing will be carried out securely and images will not be retained after extraction</li>
+      <li><strong>postcodes.io</strong> — converts each postcode into map coordinates</li>
+      <li><strong>OSRM</strong> (project-osrm.org) — works out the road distance between those coordinates</li>
     </ul>
-    <p>This feature is not currently live. This policy will be updated before it is.</p>
+    <p>Only the postcodes (and the map coordinates derived from them) are sent — never your name, street address, rank, pay or anything else you enter. As with any internet request, these services can see your device's IP address. They are run by third parties, not by us, and we never receive any of this information.</p>
+    <p>This only happens when you open or edit the Home &amp; Duty Station page, or when a calculation that couldn't run earlier (for example because you were offline) is retried. Nothing is sent for overseas duty stations.</p>
+  </section>
+
+  <section>
+    <h2>Payslip upload</h2>
+    <p>You can optionally upload a PDF of your JPA payslip so the app can fill in your pay figures for you. The PDF is read entirely on your device — it is never uploaded anywhere. The app saves only the figures it extracts (such as your net pay, tax and allowances), not the payslip itself. When you pick the file, iOS places a temporary copy in the app's cache, which iOS clears automatically.</p>
+    <p>Uploading a payslip is optional — you can enter your figures manually instead.</p>
   </section>
 
   <section>
